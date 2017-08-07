@@ -1,0 +1,32 @@
+{
+  "name": "SuperMusic ChordPro download",
+  "version": "1.0",
+  "description": "Allows downloading SuperMusic song in ChordPro format",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "page_action" :
+  {
+    "default_icon" : "icon-19.png",
+    "default_title" : "Supermusic song ChordPro export"
+  },
+  //"options_page": "options.html",
+  /*
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true
+  },*/
+  "permissions" : [
+    "declarativeContent",
+  //  "storage",
+    "tabs",
+    "downloads",
+    "http://www.supermusic.sk/"
+  ],
+  "icons" : {
+    "48" : "icon-48.png",
+    "128" : "icon-128.png"
+  },
+  "manifest_version": 2
+}
